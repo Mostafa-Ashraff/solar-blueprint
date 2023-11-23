@@ -253,15 +253,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 108px;
+        margin-top: 64px;
         gap: 24px;
       }
       .buttons-flex .btn {
-        font-size: 48px;
+        font-size: 36px;
         font-weight: 700;
         background-color: #112439;
         color: #fff;
-        padding: 24px 48px;
+        padding: 16px 24px;
         height: 100px;
       }
       .buttons-flex .btn:hover {
@@ -306,6 +306,18 @@
       <h2>Watch your conversion rates sky rocket wih our proven systems</h2>
       <div class="conversions-flex">
         <div class="conversions-numbers">
+          <div>
+            <span class="material-symbols-outlined"> paid </span>
+            <p>
+              Boost your closing rate to 40% and beyond with a proven system
+            </p>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> paid </span>
+            <p>
+              Boost your closing rate to 40% and beyond with a proven system
+            </p>
+          </div>
           <div>
             <span class="material-symbols-outlined"> paid </span>
             <p>
@@ -553,11 +565,23 @@
         duration: 1,
         delay: 0.3,
       });
-      gsap.from(".conversions-numbers div:last-of-type", {
+      gsap.from(".conversions-numbers div:nth-child(4)", {
         scrollTrigger: ".conversions",
         x: "-100%",
         duration: 1,
         delay: 0.45,
+      });
+      gsap.from(".conversions-numbers div:nth-child(5)", {
+        scrollTrigger: ".conversions",
+        x: "-100%",
+        duration: 1,
+        delay: 0.6,
+      });
+      gsap.from(".conversions-numbers div:last-of-type", {
+        scrollTrigger: ".conversions",
+        x: "-100%",
+        duration: 1,
+        delay: 0.75,
       });
       gsap.from(".about img", {
         scrollTrigger: ".about",
